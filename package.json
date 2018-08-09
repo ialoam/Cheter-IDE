@@ -1,0 +1,28 @@
+{
+  "name": "cheter-ide",
+  "version": "1.0.0",
+  "description": "A Fully Customizable IDE",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KnoxDevTeam/Cheter-IDE.git"
+  },
+  "keywords": [
+    "ide",
+    "cheter",
+    "knox"
+  ],
+  "author": "Knox, Corp. & abhay-s",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/KnoxDevTeam/Cheter-IDE/issues"
+  },
+  "homepage": "https://github.com/KnoxDevTeam/Cheter-IDE#readme",
+  "devDependencies": {
+    "electron": "^2.0.7"
+  }
+}

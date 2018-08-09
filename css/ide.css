@@ -1,0 +1,107 @@
+#explanation-of-btnSave{
+    background-color:#e34141;
+    color: white;
+    position:fixed;
+    right: 0px;
+    top: 0px;
+    font-family: monospace;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    opacity: 0;
+}   
+#btnSave:hover #explanation-of-btnSave{
+    opacity:1;display:block;
+}
+html {
+    margin: 0px;
+    background-color: white;
+}
+body {
+    margin: 0px;
+    background-color: #111111;
+}
+#preview {
+    height: 50%;
+    width: 100%;
+    overflow: scroll;
+    background-color:white;
+}
+#notificationSave {
+    position: fixed;
+    top: 10px;
+    left: -400px;
+    background-color: #111;
+    padding: 10px;
+    color: white;
+    font-family: monospace;
+    transition: all 2s;
+    width: auto;
+    overflow: hidden;
+}
+#code-editor {
+    border-width: 0px;
+    line-height: 40px;
+    font-family: monospace;
+    font-size: 15px;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-color: #818c8a;
+    color: #fbfcf9;
+    overflow: hidden;
+    outline: none;
+}
+#id {
+    border-width: 0px;
+    width: 100%;
+    padding-top: 5px;
+    line-height: 40px;
+    display:inline-block;
+    background-color: grey;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    border-color: #111;
+    padding-top: 5px;
+}
+#container {
+    height: 50%;
+    overflow: scroll;
+    background-color: #818c8a;
+}
+#no_array {
+    background-color: black;
+    border-width: 0px;
+}
+#code-edit-platform {
+    height: 100%;
+    width: 100%;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+#code-edit-wrapper {
+    margin:0px;
+    padding: 0px;
+    border-width: 0px;
+    border-color: #818c8a;
+}
+#btnSave {
+    color: white;
+    padding: 15px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    max-height: 25px;
+    max-width: 25px;
+    background-color: #3064d8;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.5);
+}
