@@ -1,5 +1,5 @@
 # Cheter IDE
-(a fork of Cheter by [@abhay-s](https://github.com/abhay-s)
+(a fork of Cheter by [@abhay-s](https://github.com/abhay-s))
 
 Cheter IDE is a new Electron-based code editor that allows you to code on the fly with little to no usage of storage, processing power, and other critical resources.
 Cheter keeps all the dependencies on your computer so you don't have to worry about the app requiring any networking at all (except for updates, of course).
