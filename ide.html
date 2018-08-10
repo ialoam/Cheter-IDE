@@ -7,31 +7,38 @@
         <link href="fonts.css" rel="stylesheet" type="text/css" />
     </head>
     <body onload="Onload()">
-
-        <div id="preview">
-        
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="btnClose" onclick="closeSidebar()">&times;</a>
+            <a href="#" onclick="newFile()">New File</a>
+            <a href="#" onclick="saveitonLocal()">Save File</a>
+            <a href="#">Settings (WIP)</a>
+            <a href="#">About (WIP)</a>
         </div>
-        <div id="container">
-            <table id="code-edit-platform">
-                <tr>
-                    <td id="no_array">
-                        <span id="no">1</span>
-                    </td>
-                    <td id="code-edit-wrapper">
-                        <textarea wrap="off" id="code-editor" onKeyPress="enterpressalert(event, this)"></textarea>
-                    </td>
-                </tr>
-            </table>
-        </div>  
+        <div id="web-dev">
+            <div id="preview">
+            
+            </div>
+            <div id="container">
+                <table id="code-edit-platform">
+                    <tr>
+                        <td id="no_array">
+                            <span id="no">1</span>
+                        </td>
+                        <td id="code-edit-wrapper">
+                            <textarea wrap="off" id="code-editor" onKeyPress="enterpressalert(event, this)"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>  
         <!-- Put the Following into an About container as well as make a settings container
         <div style="background-color:#111;padding:10px;padding-bottom:90px;color:white;font-family:monospace;">
             <h1 style="color:white;font-family:monospace;font-size:20px;padding:30px;">Cheter |Live HTML editor. Preview any HTML live online</h1>
             <center>developed by <a style="text-decoration:none;font-family:monospace;color:white;border-style:solid;border-radius:20px;padding:20px;background-color:#2e2e2e;" href="https://abhay-s.github.io">Abhay Saxena</a></center> <br><br>quickly see the output of you html online only and even save it in browser onliy! this is meant for HTML developers.to view all projects by abhay saxena click the abhay saxena button.This is open source thus you may get get source on <a href="https://github.com/abhay-s/Cheter">github</a> . 
         </div>
         -->
-        <div id="btnSave" onclick="saveitonLocal()">
+        </div>
+        <div id="btnSave" onclick="openSidebar()">
             <i class="material-icons">menu</i>
-            <div id="explanation-of-btnSave">Click this to save your code. Just visit this page again on same device to view your saved code! Remember , not to clear browser data.</div>
         </div>
         <div id="notificationSave">
             Unsuccessful in saving

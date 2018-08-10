@@ -31,9 +31,26 @@ function saveitonLocal(){
     if (typeof(Storage) !== "undefined") {
         localStorage.setItem("htmlcode",text );
         document.getElementById("code-editor").value = localStorage.getItem("htmlcode");
-        document.getElementById("notificationSave").innerHTML = "Successfully saved your file"; document.getElementById("notificationSave").style.left = "0px";
-        setTimeout(function(){document.getElementById("notificationSave").style.left = "-400px";} , 5000);
+        document.getElementById("notificationSave").innerHTML = "Successfully saved your file"; document.getElementById("notificationSave").style.right = "0px";
+        setTimeout(function(){document.getElementById("notificationSave").style.right = "-400px";} , 5000);
     } else {
-        document.getElementById("notificationSave").innerHTML = "unsuccessful in saving your file";  document.getElementById("notificationSave").style.left = "0px";
+        document.getElementById("notificationSave").innerHTML = "unsuccessful in saving your file";  document.getElementById("notificationSave").style.right = "0px";
     }    
+}
+
+function openSidebar() {
+    document.getElementById("sidebar").style.width = "250px";
+    document.getElementById("web-dev").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "#3064d8";
+}
+
+function closeSidebar() {
+    document.getElementById("sidebar").style.width = "0px";
+    document.getElementById("web-dev").style.marginLeft ="0px";
+    document.body.style.backgroundColor = "#3064d8";
+}
+
+function newFile() {
+    localStorage.clear(htmlcode);
+    window.location.reload();
 }
