@@ -104,6 +104,12 @@ body {
     background-color: #3064d8;
     border-radius: 50%;
     box-shadow: 5px 5px 5px rgba(1,1,1,0.5);
+    transition: all .5s linear;
+}
+#btnSave:hover {
+    background-color: #0444ce;
+    cursor: pointer;
+
 }
 #no {
     color: #dbe0df;
